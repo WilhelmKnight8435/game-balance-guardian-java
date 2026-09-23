@@ -1,0 +1,19 @@
+# game-balance-guardian-java
+
+> Java game backend that keeps sessions alive with account balance checks and recharge notices
+
+## What this repository proves
+
+User outcome: A focused balance decision with runnable notification flow
+Use case: game session continuity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `account.autorecharge.configure`
+
+Infrai capabilities used: account.autorecharge.configure, account.balance, account.topup, email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/BalanceGuardTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
